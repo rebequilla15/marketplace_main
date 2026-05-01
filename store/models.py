@@ -34,7 +34,7 @@ class Product(models.Model):
     description = models.TextField()
     price = models.DecimalField(max_digits=10, decimal_places=2)
     stock = models.PositiveIntegerField(default=0)
-    image = models.ImageField(upload_to='marketplace/')
+    
 
     owner = models.ForeignKey(
         User,
